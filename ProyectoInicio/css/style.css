@@ -87,20 +87,29 @@ h1 {
   color: white;
   font-size: 4.5rem;
   background-color: rgba(248, 102, 102, 0.65);
-  text-transform: uppercase;
+  font-weight:800;
   margin-bottom: 1rem;
   padding: 3, 5rem;
-  font-weight: 80rem;
-  display: block;
   font-family: sans-serif;
-  box-sizing: border-box;
   text-align: left;
+  line-height: 1.2;
 }
 
-.navegador a {
-  background-color: rgba(248, 102, 102, 0.65);
+.loginAlumnos {
+  color:#F76666;
+  font-family: sans-serif;
+
 }
 
-.div h3 {
+.cursoh3 {
   color: #f76666;
+  text-align: center;
+}
+
+.cambiatufuturoh3{
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: sans-serif;
 }
