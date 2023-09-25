@@ -98,13 +98,23 @@ h1 {
 .loginAlumnos {
   color:#F76666;
   font-family: sans-serif;
+  text-align: right;
+  background-color: transparent;
 
 }
+
+.loginEmpresas{
+  color: #F76666;
+  font-family: sans-serif;
+  text-align: right;
+}
+
 
 .cursoh3 {
   color: #f76666;
   text-align: center;
 }
+
 
 .cambiatufuturoh3{
     color: black;
