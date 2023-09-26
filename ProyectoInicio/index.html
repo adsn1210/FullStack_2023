@@ -5,19 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- <style>
-        h1{
-            color: red;
-            /* PROPIEDAD Y VALOR */
-            background-color: yellow;
-            /* MOSTRAR PROPIEDAD COLORE, VER COMO APARECE TACHADO PUES ES ERRONEO */
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Skranji&display=swap" rel="stylesheet">
 
-        }
-
-    </style> -->
     <link rel="preload" href="css/style.css" as="style">
-
     <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preload" href="../ProyectoInicio/css/normalize.css" as="style">
+    <link rel="stylesheet" href="../ProyectoInicio/css/normalize.css">
 
     <!-- Rel= al estilo de relazion que tendra con el atributo Href -->
 
@@ -25,44 +21,6 @@
 </head>
 
 <body>
-    <!--alt+shift+f para ordenar el código-->
-
-    <!-- ejemplo clases -->
-    <!-- <section class="seccionprueba">
-        <h3>
-            Ejercicio selectores H3
-        </h3>
-
-        <h5 class="h5azul">
-            Ejercicio selectores H5
-        </h5>
-
-        <p id="projo">
-            Ejercicio selectores P
-        </p>
-    </section> -->
-
-    <!-- <section class="cadena">
-        Ejercico Selectores
-        <h3 class="primerh3">1ºH3</h3>
-
-        <h3 id="segundoh3">2ºH3 </h3>
-
-        <h6>primerH6</h6>
-
-        <p>Esto es un parrafo </p>
-
-        <img src="/ProyectoInicio/img/Logo-Adecco.png" alt="Imagen1">
-
-        <a href="">Primer enlace</a>
-        <a href="">Segundo enlace</a>
-        <a href="">Tercer enlace</a>
-
-    </section> -->
-
-
-
-
 
     <header>
         <nav class="navegador">
@@ -70,15 +28,17 @@
             <a class="loginAlumnos" href="#"> Login alumnos </a>
             <!-- a=enlaces -->
 
-            <a  class="loginEmpresas" href="#"> Login empresas </a>
+            <a class="loginEmpresas" href="#"> Login empresas </a>
 
-            <a class="imgTucarrera-digital" href="#"><img src="img/Tu-carrera-digital-general.png" alt="Tu-carrera-digital"></a>
+            <a class="imgTucarrera-digital" href="#"><img src="img/Tu-carrera-digital-general.png"
+                    alt="Tu-carrera-digital"></a>
 
             <a href="#"> cursos </a>
 
+            <a href="#"> sobre nosotros </a>
+
             <a href="#"> informate </a>
 
-            <a href="#"> sobre nosotros </a>
         </nav>
 
     </header>
@@ -99,31 +59,33 @@
     </section>
     <div>
         <h3 class="cursoh3">
-             cursos
+            cursos
         </h3>
 
         <h3 class=cambiatufuturoh3>
             cambia tu futuro
         </h3>
+
         <a href="#"> ver todo </a>
         <a href="#"> madrid</a>
-        <h2>
+
+        <h2 class="colorprincipal">
             marketing digital
         </h2>
         <a href="#"> inscribirme </a>
-        <h2>
+        <h2 class="colorprincipal">
             programación de videojuegos, diseño 3d y realidad virtual
         </h2>
         <a href="#"> inscribirme </a>
 
-        <h2>
+        <h2 class="colorprincipal">
             programacion web fullstack
         </h2>
         <a href="#"> inscribirme </a>
 
     </div>
     <aside>
-        <h3>
+        <h3 class="texto-center-pregunta">
             ¿te interesa algún otro curso en tu ciudad?
         </h3>
         <a href="#">¿pídenoslo!</a>
@@ -136,7 +98,7 @@
             allowfullscreen></iframe>
     </section>
     <article>
-        <h3>
+        <h3 class="texto-h3-red">
             ¿para quién son estos cursos?
         </h3>
         <h2>
@@ -153,7 +115,7 @@
             queremos
             que saques el máximo partido a estos cursos y que potencies tus posibilidades de encontrar un empleo
         </h2>
-        <h4>
+        <h4 class="texto-h4-participar">
             para participar, necesitarás estar inscrito en garantía juvenil
 
         </h4>
@@ -170,7 +132,8 @@
     <div>
         <img src="img/21643022702_cta_para_quien_centro.png" alt="Texto">
     </div>
-    <div>
+
+    <div class="localizaciones-">
         <h2>
             localizaciones:
         </h2>
@@ -186,7 +149,10 @@
         <p>
             calle hospital 2 28012, madrid, madrid.
         </p>
-        <h3>
+
+        
+        <section>
+            <h3>
             contactar
         </h3>
         <h2>
@@ -211,6 +177,7 @@
         <section>
             <img src="img/ico-EMAIL.png" alt="ico-EMAIL">
         </section>
+    
 
     </div>
 
