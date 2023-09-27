@@ -4,18 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Normalize para que la web se adapta a todos los navegadores -->
+    <link rel="preload" href="../ProyectoInicio/css/normalize.css" as="style">
+    <link rel="stylesheet" href="../ProyectoInicio/css/normalize.css">
+    <!-- Rel= al estilo de relazion que tendra con el atributo Href -->
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Skranji&display=swap" rel="stylesheet">
 
+
+    
+    <!-- Reload para cargar la pagina de css y su vinculo con el archivo -->
     <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="./css/style.css">
 
-    <link rel="preload" href="../ProyectoInicio/css/normalize.css" as="style">
-    <link rel="stylesheet" href="../ProyectoInicio/css/normalize.css">
 
-    <!-- Rel= al estilo de relazion que tendra con el atributo Href -->
 
     <title> Tu Carrera Digital </title>
 </head>
@@ -42,22 +48,27 @@
         </nav>
 
     </header>
-    <main>
-        <h1>
-            descubre la formación que te dará la oportunidad de convertirte en un profesional digital
-        </h1>
-        <section>
-            <img src="img/ico-centro.png" alt="icono flecha">
-        </section>
-        <a href="#"> ver cursos </a>
+    <main class="imgfondo-principal">
+
+        <div class="contenedor">
+            <div class="margenDerecho">
+                <h1>
+                    Descubre la formación que te dará la oportunidad de convertirte en un profesional digital
+                </h1>
+                <img src="img/ico-centro.png" alt="icono flecha">
+                <a href="#"> ver cursos </a>
+            </div>
+        </div>
+
     </main>
 
     <section>
         <img src="img/Logos-oficiales.png" alt="Logos oficiales tu carrera digital">
         <!-- imagenes con informacion en "alt" dan buen posicionamiento en SEO -->
-
+        <img src="img/Logo-Adecco.png" alt="Logo-Adecco">
     </section>
     <div>
+
         <h3 class="cursoh3">
             cursos
         </h3>
@@ -97,6 +108,7 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
     </section>
+
     <article>
         <h3 class="texto-h3-red">
             ¿para quién son estos cursos?
@@ -105,7 +117,7 @@
             si quieres dar un giro a tu carrera profesional y formarte en profesiones digitales con futuro, este es tu
             lugar.
         </h2>
-        <h2>
+        <h2 class="texto-largo-paraquiensonestoscursos">
             cuando eliges un curso en tu carrera digital, estás dando el paso definitivo hacia las profesiones con más
             demanda
             del momento, como marketing digital, desarrollo web full stack y programación de videojuegos, diseño 3d y
@@ -133,34 +145,41 @@
         <img src="img/21643022702_cta_para_quien_centro.png" alt="Texto">
     </div>
 
-    <div class="localizaciones-">
-        <h2>
-            localizaciones:
-        </h2>
-        <h3>
-            madrid
-        </h3>
-        <p>
-            calle del marqués de ahumada 7 planta baja aula 15 28028, madrid, madrid.
-        </p>
-        <h3>
-            madrid
-        </h3>
-        <p>
-            calle hospital 2 28012, madrid, madrid.
-        </p>
-
-        
-        <section>
+    <section class="localizaciones">
+        <div class="contenedor">
+            <h2>
+                localizaciones:
+            </h2>
             <h3>
-            contactar
-        </h3>
-        <h2>
-            ¿tienes dudas? habla con nosotros:
-        </h2>
+                madrid
+            </h3>
+            <p>
+                calle del marqués de ahumada 7 planta baja aula 15 28028, madrid, madrid.
+            </p>
 
-        <a href="#"> 638024408 </a>
-        <section>
+            <p>
+                calle hospital 2 28012, madrid, madrid.
+            </p>
+
+            <h3>
+                madrid
+            </h3>
+        </div>
+    </section>
+
+    <section class="contactos">
+        <div class="contactar">
+            <h3>
+                contactar
+            </h3>
+            <h2>
+                ¿tienes dudas? habla con nosotros:
+            </h2>
+        </div>
+
+        <div>
+            <h3>Llamanos</h3>
+            <a href="#"> 638024408 </a>
             <img src="img/ico-TLF.png" alt="Telefono">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call" width="24"
                 height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
@@ -172,14 +191,17 @@
                 <path d="M15 7a2 2 0 0 1 2 2"></path>
                 <path d="M15 3a6 6 0 0 1 6 6"></path>
             </svg>
-        </section>
-        <a href="#"> patric.departearroyo@adecco.com </a>
-        <section>
+            <h3>Escribenos</h3>
+            <a href="#"> patric.departearroyo@adecco.com </a>
             <img src="img/ico-EMAIL.png" alt="ico-EMAIL">
-        </section>
-    
+        </div>
 
-    </div>
+    </section>
+
+
+
+
+
 
     <form action="">
         <fieldset>
@@ -225,6 +247,7 @@
     <!-- Etiquetas para agrupar :<header> <footer> <nav> <main> <section> <article> <aside> <div> -->
 
     <!-- etiqueta de formulario -->
+
 </body>
 
 </html>

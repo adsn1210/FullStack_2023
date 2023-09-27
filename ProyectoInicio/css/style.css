@@ -1,9 +1,10 @@
 /* Nombre del archivo debe ser STYLE.CSS */
 
-:root{
-  --colorPrincipal: #F76666;
-  --colorSecundario: #02052F;
-  --fuentePrincipal:'Open Sans', sans-serif;
+:root {
+  --colorPrincipal: #f76666;
+  --colorSecundario: #02052f;
+  --fuentePrincipal: "Open Sans", sans-serif;
+  --fuenteBotones: "Dinbold", sans-serif;
 }
 
 html {
@@ -11,25 +12,13 @@ html {
 }
 
 body {
-  font-size: 16px;
+  /* font-size: 16px; */
   /* background-color: var(--colorPrincipal); */
   font-family: var(--fuentePrincipal);
 }
 
-h1 {
-  color:var(--colorPrincipal);
-  font-size: 4.5rem;
-  background-color: rgba(248, 102, 102, 0.65);
-  font-weight:800;
-  margin-bottom: 1rem;
-  padding: 3, 5rem;
-  text-align: left;
-  line-height: 1.2;
-}
 
-
-
-.texto-center-pregunta{
+.texto-center-pregunta {
   text-align: center;
   text-transform: uppercase;
   font-weight: 800;
@@ -40,52 +29,126 @@ h1 {
   text-transform: uppercase;
 }
 
-
-.localizaciones- >h2 , .localizaciones- > h3 , .localizaciones- > p {
-  text-transform: uppercase;
-  color:white;
-  text-transform: uppercase;
-  background-color: black;
-}
-
-
 .texto-h3-red {
   text-align: initial;
   color: var(--colorPrincipal);
   text-transform: uppercase;
   font-size: 17px;
   font-weight: 800;
-
 }
 
-.colorprincipal{
+.colorprincipal {
   color: var(--colorPrincipal);
 }
 
 .loginAlumnos {
-  color:#F76666;
+  color: #f76666;
   font-family: sans-serif;
   text-align: right;
   background-color: transparent;
-
 }
 
-.loginEmpresas{
-  color: #F76666;
+.loginEmpresas {
+  color: #f76666;
   text-align: right;
 }
-
 
 .cursoh3 {
   color: #f76666;
   text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 17px;
 }
 
-
-.cambiatufuturoh3{
-    color: black;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 800;
-    font-family: sans-serif;
+.cambiatufuturoh3 {
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: sans-serif;
 }
+
+.texto-largo-paraquiensonestoscursos {
+  font-size: 14px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  font-weight: 400;
+  color: #02052f;
+}
+.localizaciones {
+  color: white;
+  background-color: black;
+  text-transform: uppercase;
+}
+
+.contactos {
+  background-color: var(--colorPrincipal);
+}
+.contactar{
+  color: white;
+}
+
+/* Estilos Genericos */
+.contenedor{
+  max-width: 89%;
+  margin-top: 0;
+  margin-right:auto ;
+  margin-bottom:0 ;
+  margin-left:auto ; 
+
+  /* margin: o auto; TIENE LA MISMA FUNCION QUE LOS 4 MARGIN DE ARRIBA */
+}
+
+/* Estilos para el Main */
+.imgfondo-principal{
+  background-image:url(../img/11641893944_banner_zona_centro.png);
+  background-size:cover;
+  background-position: top left;
+  padding:80px 0 180px 0;
+}
+
+.margenDerecho{
+  margin-right: 45%;
+}
+
+h1 {
+  color: white;
+  font-family:var(--fuentePrincipal);
+  font-size: 4.8rem;
+  background-color: rgba(248, 102, 102, 0.65);
+  font-weight: 800;
+  margin-bottom: 10px;
+  padding: 35px;
+  text-align: left;
+  line-height: 1.2;
+}
+
+.imgfondo-principal a{
+  background-color: black;
+  color: white;
+  border:2px solid black;
+  padding: 24px 94px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family:var(--fuenteBotones);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+/* Estilos para la imagen de corporaciones */
+
+/* Estilos para Cursos */
+
+/* Estilo seccion Pidenoslo */
+
+/* Estilos seccion video */
+
+/* Estilos seccion para quien son estos cursos */
+
+/* Estilos Localizaciones */
+
+/* Estilos Contactar */
+
+/* Estilos Footer */
+
+/* Estilos Header */

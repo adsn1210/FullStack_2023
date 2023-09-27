@@ -1,0 +1,16 @@
+.fondo-amarillo {
+  background-color: yellow;
+  height: 300px;
+}
+
+.fondo-azul {
+  background-color: blue;
+  height: 100px;
+  max-width: 89%;
+    margin: auto;
+}
+
+.texto{
+    max-width: 89%;
+    margin: auto;
+}
