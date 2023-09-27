@@ -17,7 +17,6 @@ body {
   font-family: var(--fuentePrincipal);
 }
 
-
 .texto-center-pregunta {
   text-align: center;
   text-transform: uppercase;
@@ -53,21 +52,8 @@ body {
   text-align: right;
 }
 
-.cursoh3 {
-  color: #f76666;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 800;
-  font-size: 17px;
-}
 
-.cambiatufuturoh3 {
-  color: black;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 800;
-  font-family: sans-serif;
-}
+
 
 .texto-largo-paraquiensonestoscursos {
   font-size: 14px;
@@ -85,37 +71,40 @@ body {
 .contactos {
   background-color: var(--colorPrincipal);
 }
-.contactar{
+.contactar {
   color: white;
 }
 
 /* Estilos Genericos */
-.contenedor{
-  max-width: 89%;
+.contenedor {
+  max-width: 80%;
   margin-top: 0;
-  margin-right:auto ;
-  margin-bottom:0 ;
-  margin-left:auto ; 
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
 
   /* margin: o auto; TIENE LA MISMA FUNCION QUE LOS 4 MARGIN DE ARRIBA */
 }
 
+
+
+
 /* Estilos para el Main */
-.imgfondo-principal{
-  background-image:url(../img/11641893944_banner_zona_centro.png);
-  background-size:cover;
+.imgfondo-principal {
+  background-image: url(../img/11641893944_banner_zona_centro.png);
+  background-size: cover;
   background-position: top left;
-  padding:80px 0 180px 0;
+  padding: 80px 0 180px 0;
 }
 
-.margenDerecho{
+.margenDerecho {
   margin-right: 45%;
 }
 
 h1 {
   color: white;
-  font-family:var(--fuentePrincipal);
-  font-size: 4.8rem;
+  font-family: var(--fuentePrincipal);
+  font-size: 4.4rem;
   background-color: rgba(248, 102, 102, 0.65);
   font-weight: 800;
   margin-bottom: 10px;
@@ -124,20 +113,61 @@ h1 {
   line-height: 1.2;
 }
 
-.imgfondo-principal a{
+.imgfondo-principal a {
   background-color: black;
   color: white;
-  border:2px solid black;
+  border: 2px solid black;
   padding: 24px 94px;
   text-decoration: none;
   text-transform: uppercase;
-  font-family:var(--fuenteBotones);
+  font-family: var(--fuenteBotones);
   font-size: 1.4rem;
   font-weight: 700;
 }
+
+.flexMain {
+  display: flex;
+  flex-direction: row;
+  /* por defecto es row  */
+  justify-content: space-between;
+  /* importante el justify-content ya que con eso ordenaras los objetos */
+}
+
 /* Estilos para la imagen de corporaciones */
+.imagenesCorpo {
+  background-color: white;
+  display: flex;
+  justify-content:space-evenly;
+  align-items:center;
+  margin-top: -120px;
+  border-radius: 12px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
 
 /* Estilos para Cursos */
+.Seccioncursos{
+  
+}
+.cursoh3 {
+  color:var(--colorPrincipal);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 17px;
+  font-family:var(--fuentePrincipal);
+  margin: 40px 0px;
+}
+.cambiatufuturoh3 {
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: sans-serif;
+  font-size: 27px;
+}
+
 
 /* Estilo seccion Pidenoslo */
 

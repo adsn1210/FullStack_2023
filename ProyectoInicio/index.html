@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Normalize para que la web se adapta a todos los navegadores -->
     <link rel="preload" href="../ProyectoInicio/css/normalize.css" as="style">
     <link rel="stylesheet" href="../ProyectoInicio/css/normalize.css">
@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Skranji&display=swap" rel="stylesheet">
 
 
-    
+
     <!-- Reload para cargar la pagina de css y su vinculo con el archivo -->
     <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="./css/style.css">
@@ -55,25 +55,31 @@
                 <h1>
                     Descubre la formación que te dará la oportunidad de convertirte en un profesional digital
                 </h1>
-                <img src="img/ico-centro.png" alt="icono flecha">
-                <a href="#"> ver cursos </a>
+                <div class="flexMain">
+                    <img src="img/ico-centro.png" alt="icono flecha">
+                    <a href="#"> ver cursos </a>
+                </div>
             </div>
         </div>
 
     </main>
 
-    <section>
-        <img src="img/Logos-oficiales.png" alt="Logos oficiales tu carrera digital">
-        <!-- imagenes con informacion en "alt" dan buen posicionamiento en SEO -->
-        <img src="img/Logo-Adecco.png" alt="Logo-Adecco">
+    <section class=" imagenesCorpo contenedor">
+            <img src="img/Logos-oficiales.png" alt="Logos oficiales tu carrera digital">
+
+            <!-- imagenes con informacion en "alt" dan buen posicionamiento en SEO -->
+            <img src="img/Logo-Adecco.png" alt="Logo-Adecco">
+    
+
     </section>
-    <div>
+
+    <section class="Seccioncursos contenedor">
 
         <h3 class="cursoh3">
             cursos
         </h3>
 
-        <h3 class=cambiatufuturoh3>
+        <h2 class=cambiatufuturoh3>
             cambia tu futuro
         </h3>
 
@@ -94,7 +100,9 @@
         </h2>
         <a href="#"> inscribirme </a>
 
-    </div>
+    </section>
+
+    
     <aside>
         <h3 class="texto-center-pregunta">
             ¿te interesa algún otro curso en tu ciudad?
