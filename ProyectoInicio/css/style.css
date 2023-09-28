@@ -265,12 +265,12 @@ h1 {
   padding: 15px 34px;
   border-radius: 40px;
   font-weight: 700;
-
-
-
-
 }
 
+.pidenosloBoton a:hover{
+  background-color: #02052f;
+  text-decoration: underline;
+}
 /* Estilos seccion video */
 
 /* Estilos seccion para quien son estos cursos */
