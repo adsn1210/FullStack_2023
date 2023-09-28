@@ -17,13 +17,6 @@ body {
   font-family: var(--fuentePrincipal);
 }
 
-.texto-center-pregunta {
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 800;
-  font-size: 17px;
-}
-
 .texto-h4-participar {
   text-transform: uppercase;
 }
@@ -45,19 +38,12 @@ body {
   font-family: sans-serif;
   text-align: right;
   background-color: transparent;
-
 }
 
 .loginEmpresas {
   color: #f76666;
   text-align: right;
 }
-
-
-
-
-
-
 
 /* Estilos Genericos */
 .contenedor {
@@ -135,10 +121,9 @@ h1 {
   text-transform: uppercase;
   font-size: 1.7rem;
   margin: 40px 0px;
-
 }
 
-.Seccioncursos>h2{  
+.Seccioncursos > h2 {
   margin-bottom: 72px;
   text-align: center;
   color: var(--colorSecundario);
@@ -148,13 +133,11 @@ h1 {
   font-size: 2.7rem;
 }
 
-
-.botonesCursos{
+.botonesCursos {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-bottom: 105px;
-
 }
 
 .cambiatufuturoh3 {
@@ -166,7 +149,7 @@ h1 {
   font-size: 27px;
 }
 
-.botonVertodo{
+.botonVertodo {
   background-color: var(--colorPrincipal);
   color: white;
   font-family: var(--fuentePrincipal);
@@ -178,12 +161,11 @@ h1 {
   margin-right: 0.5rem;
   margin-left: 0.5rem;
   border: 1px solid var(--colorPrincipal);
-
 }
 
-.botonMadrid{
+.botonMadrid {
   background-color: white;
-  color:var(--colorSecundario);
+  color: var(--colorSecundario);
   font-family: var(--fuentePrincipal);
   font-size: 1.4rem;
   padding: 12px 24px;
@@ -192,21 +174,17 @@ h1 {
   font-weight: 600;
   margin-right: 0.5rem;
   margin-left: 0.5rem;
-  border: 1px  solid var(--colorPrincipal);
-
+  border: 1px solid var(--colorPrincipal);
 }
 
-
-.CursosOfertados{
+.CursosOfertados {
   margin-bottom: 120px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
-
 }
 
-.CursosOfertados>div{
+.CursosOfertados > div {
   flex: 2;
   max-width: 50%;
   justify-content: space-between;
@@ -214,11 +192,9 @@ h1 {
   display: flex;
   flex-direction: column;
   min-height: 300px;
-
-
 }
 
-.Marketing{
+.Marketing {
   background-image: url(../img/Curso-marketing-digital-centro.png);
   margin-right: 15px;
   background-repeat: no-repeat;
@@ -226,7 +202,7 @@ h1 {
   background-position: right;
 }
 
-.Videojuegos{
+.Videojuegos {
   background-image: url(../img/Curso-programacion-videojuegos-centro.png);
   margin-left: 15px;
   background-repeat: no-repeat;
@@ -234,16 +210,16 @@ h1 {
   background-position: right;
 }
 
-.CursosOfertados h2{
+.CursosOfertados h2 {
   color: white;
-  font-family: var(--fuentePrincipal);
+  font-family: var(--fuenteBotones);
   font-size: 2.7rem;
-  
-
-
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 22px;
 }
 
-.CursosOfertados div h2{
+.CursosOfertados div h2 {
   color: white;
   font-size: 2.7rem;
   text-transform: uppercase;
@@ -251,8 +227,7 @@ h1 {
   margin-bottom: 22px;
 }
 
-
-.CursosOfertados a{
+.CursosOfertados a {
   color: var(--colorPrincipal);
   font-size: 1.4rem;
   background-color: white;
@@ -261,23 +236,40 @@ h1 {
   text-transform: uppercase;
   font-weight: 700;
   padding: 20px 60px;
-  display: block;
+  display: inline-block;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Estilo seccion Pidenoslo */
+
+.texto-center-pregunta {
+  margin-bottom: 150px;
+  text-transform: uppercase;
+  font: var(--fuentePrincipal);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.zonaH3 {
+  font-weight: 800;
+  font-size: 17px;
+  text-align: center;
+  margin: 60px ;
+}
+
+.pidenosloBoton a {
+  color: white  ;
+  text-decoration: none;
+  background-color: #f76666;
+  font-family: var(--fuentePrincipal);
+  font-size: 1.4rem;
+  padding: 15px 34px;
+  border-radius: 40px;
+  font-weight: 700;
+
+
+
+
+}
 
 /* Estilos seccion video */
 
@@ -290,17 +282,13 @@ h1 {
   font-weight: 400;
   color: #02052f;
 
-
-
-/* Estilos Localizaciones */
-
+  /* Estilos Localizaciones */
 }
 .localizaciones {
   color: white;
   background-color: black;
   text-transform: uppercase;
 }
-
 
 /* Estilos Contactar */
 .contactos {
@@ -309,7 +297,6 @@ h1 {
 .contactar {
   color: white;
 }
-
 
 /* Estilos Footer */
 
