@@ -33,16 +33,20 @@ body {
   color: var(--colorPrincipal);
 }
 
-.loginAlumnos {
+.navegadorLogin {
   color: #f76666;
   font-family: sans-serif;
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
   text-align: right;
   background-color: transparent;
 }
 
-.loginEmpresas {
-  color: #f76666;
-  text-align: right;
+.loginAlumnos {
 }
 
 /* Estilos Genericos */
@@ -52,7 +56,6 @@ body {
   margin-right: auto;
   margin-bottom: 0;
   margin-left: auto;
-
   /* margin: o auto; TIENE LA MISMA FUNCION QUE LOS 4 MARGIN DE ARRIBA */
 }
 
@@ -253,11 +256,11 @@ h1 {
   font-weight: 800;
   font-size: 17px;
   text-align: center;
-  margin: 60px ;
+  margin: 60px;
 }
 
 .pidenosloBoton a {
-  color: white  ;
+  color: white;
   text-decoration: none;
   background-color: #f76666;
   font-family: var(--fuentePrincipal);
@@ -267,7 +270,7 @@ h1 {
   font-weight: 700;
 }
 
-.pidenosloBoton a:hover{
+.pidenosloBoton a:hover {
   background-color: #02052f;
   text-decoration: underline;
 }
