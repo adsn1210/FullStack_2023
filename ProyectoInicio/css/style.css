@@ -17,17 +17,7 @@ body {
   font-family: var(--fuentePrincipal);
 }
 
-.texto-h4-participar {
-  text-transform: uppercase;
-}
 
-.texto-h3-red {
-  text-align: initial;
-  color: var(--colorPrincipal);
-  text-transform: uppercase;
-  font-size: 17px;
-  font-weight: 800;
-}
 
 .colorprincipal {
   color: var(--colorPrincipal);
@@ -46,8 +36,6 @@ body {
   background-color: transparent;
 }
 
-.loginAlumnos {
-}
 
 /* Estilos Genericos */
 .contenedor {
