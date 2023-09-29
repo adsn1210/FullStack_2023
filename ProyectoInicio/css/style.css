@@ -263,6 +263,11 @@ h1 {
   text-decoration: underline;
 }
 /* Estilos seccion video */
+.VideoYoutube {
+  display: flex;
+  justify-content: center;
+
+}
 
 /* Estilos seccion para quien son estos cursos */
 
@@ -292,3 +297,8 @@ h1 {
 /* Estilos Footer */
 
 /* Estilos Header */
+
+
+
+
+/* Escribir en CSS; BEM; Utility-First;Modulo */

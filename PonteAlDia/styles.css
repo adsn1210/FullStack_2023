@@ -1,0 +1,105 @@
+
+.CadenaDescendente h2{
+    background-color: blue;
+    height: 100px;
+}
+
+.TodosLosHijos>div>h2{
+    background-color: blue;
+    height: 100px;
+}
+
+.Margin{
+    margin:90px ;
+    background-color: yellow;
+}
+
+.Pading{
+    padding:50px;
+    background-color: yellow;
+}
+
+
+.Displays p{
+    background-color: aqua;
+}
+
+.Displays a{
+    background-color: blueviolet;
+}
+
+.Displays h1{
+    background-color: brown;
+}
+
+.Displays h3{
+    background-color: darkgray;
+}
+
+.Displays h6{
+    background-color: sienna;
+}
+
+.Displays>div>p{
+    background-color: black;
+    color: white;
+}
+
+
+
+
+.Displays1>p{
+    background-color: aqua;
+    display: inline;
+}
+
+.Displays1 a{
+    background-color: blueviolet;
+    display: block;
+    text-decoration: none;
+}
+
+.Displays1 h1{
+    background-color: brown;
+    display: inline;
+}
+
+.Displays1 h3{
+    background-color: darkgray;
+    display:inline;
+}
+
+.Displays1 h6{
+    background-color: sienna;
+    display: inline;
+}
+
+.Displays1>div>p{
+    background-color: black;
+    color: white;
+    display: inline;
+
+}
+
+.Displays1 div{
+    display: inline;
+}
+
+
+
+.Flex1 h5{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: end;
+    background-color: green;
+
+}
+
+
+.Flex2 h5{
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: end;
+  background-color: blue;  
+}
