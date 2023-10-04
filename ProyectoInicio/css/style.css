@@ -12,11 +12,10 @@ html {
 }
 
 body {
-  /* font-size: 16px; */
+  font-size: 16px;
   /* background-color: var(--colorPrincipal); */
   font-family: var(--fuentePrincipal);
 }
-
 
 /* @media (min-width:900px) {
   body{
@@ -31,41 +30,36 @@ body {
  } 
 } */
 
-
-
 .colorprincipal {
   color: var(--colorPrincipal);
 }
 
-
-
 /* MediaQuery con vista Ordenador */
 @media (min-width:1140px) {
   /* Estilos Genericos */
-.contenedor {
-  max-width: 80%;
-  margin-top: 0;
-  margin-right: auto;
-  margin-bottom: 0;
-  margin-left: auto;
-  /* margin: o auto; TIENE LA MISMA FUNCION QUE LOS 4 MARGIN DE ARRIBA */
-}
+  .contenedor {
+    max-width: 80%;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    /* margin: o auto; TIENE LA MISMA FUNCION QUE LOS 4 MARGIN DE ARRIBA */
+  }
 }
 
 /* para tablet */
-@media (max-width:1140px) and (min-width:768px){
-.contenedor{
-  max-width: 80%;
-  margin: 0 auto;
-
-}
+@media (max-width:1140px) and (min-width:768px) {
+  .contenedor {
+    max-width: 80%;
+    margin: 0 auto;
+  }
 }
 /* Para movil */
 @media (max-width:768px) {
-  .contenedor{
-    max-width: 90%;
+  .contenedor {
+    max-width: 90%; 
+    margin: 0 auto;
   }
-  
 }
 
 /* Estilos para el Main */
@@ -77,9 +71,13 @@ body {
 }
 
 .margenDerecho {
-  margin-right: 45%;
+  margin-right: 33%;
 }
-
+@media (max-width:1140px) {
+  .margenDerecho {
+    margin-right: 0;
+  }
+}
 h1 {
   color: white;
   font-family: var(--fuentePrincipal);
@@ -104,12 +102,23 @@ h1 {
   font-weight: 700;
 }
 
+@media (max-width: 768px) {
+  .imgfondo-principal {
+    padding: 24px 70px;
+  }
+}
+
 .flexMain {
   display: flex;
   flex-direction: row;
   /* por defecto es row  */
   justify-content: space-between;
   /* importante el justify-content ya que con eso ordenaras los objetos */
+}
+
+
+.flexMain img {
+  margin-right: 10px;
 }
 
 /* Estilos para la imagen de corporaciones */
@@ -122,6 +131,40 @@ h1 {
   border-radius: 12px;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+@media (max-width: 1140px) and (min-width: 768px) {
+  [src="img/Logos-oficiales.png"] {
+    max-width: 70%;
+  }
+  [src="img/Logo-Adecco.png"] {
+    max-width: 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  .imagenesCorpo {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .imagenesCorpo img {
+    max-width: 100%;
+    margin: 20px;
+  }
+}
+
+@media (max-width:768px) {
+  .imagenesCorpo{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imagenesCorpo img{
+    max-width: 90%;
+    padding: 20%;
+  }
 }
 
 /* Estilos seccion Cursos */
@@ -196,6 +239,13 @@ h1 {
   justify-content: space-between;
 }
 
+@media (max-width: 768px) {
+  .CursosOfertados {
+    flex-direction: column;
+    /* align-items: center; */
+  }
+}
+
 .CursosOfertados > div {
   flex: 2;
   max-width: 50%;
@@ -205,7 +255,21 @@ h1 {
   flex-direction: column;
   min-height: 300px;
 }
+@media (max-width: 1140px) {
+  .CursosOfertados > div {
+    padding: 20px 30px;
+  }
+}
 
+@media (max-width: 768px) {
+  .CursosOfertados > div {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    max-width: 100%;
+  }
+}
 .Marketing {
   background-image: url(../img/Curso-marketing-digital-centro.png);
   margin-right: 15px;
@@ -289,7 +353,21 @@ h1 {
   justify-content: center;
   margin-bottom: 70px;
 }
+@media (max-width:1140px) {
+  .VideoYoutube iframe{
+    width: 100%;
+    height: 350px;
+  }
+  
+}
 
+@media (max-width:767px) {
+  .VideoYoutube iframe{
+    width: 100%;
+    height: 200px;
+  }
+  
+}
 /* Estilos seccion para quien son estos cursos */
 
 .SeccionParaQuien {
@@ -297,11 +375,26 @@ h1 {
   flex-direction: row;
   margin-bottom: 100px;
 }
+@media (max-width:1140px) {
+  .SeccionParaQuien{
+    flex-direction: column;
+  }
+  
+}
 
 .SeccionParaQuien > div {
   flex: 1;
   max-width: 50%;
 }
+
+@media (max-width:1140px) {
+  .SeccionParaQuien>div{
+    flex:1;
+    max-width: 100%;
+  }
+  
+}
+
 
 .texto-h3-red {
   color: var(--colorPrincipal);
@@ -422,7 +515,7 @@ h1 {
 }
 
 /* Estilos Localizaciones */
-.localizaciones { 
+.localizaciones {
   color: white;
   background-color: black;
   text-transform: uppercase;
@@ -444,6 +537,22 @@ h1 {
 .MadridCaja2 {
   width: 25%;
 }
+@media (max-width:1140px) {
+  .localizaciones{
+    width: 50%;
+  }
+  
+}
+
+@media (max-width:768px) {
+  .localizaciones .contenedor{
+    flex-wrap: wrap;
+  }
+  .localizaciones .contenedor div{
+    width: 100%;
+  }
+}
+
 
 /* Estilos Contactar */
 
@@ -471,6 +580,7 @@ h1 {
   flex-direction: row;
 }
 
+
 .ContactoCuadros img {
   margin-right: 15px;
 }
@@ -495,6 +605,19 @@ h1 {
   flex: 1;
   max-width: 50%;
   padding: 20px;
+}
+
+@media (max-width:1140px) {
+  .ContactoCuadros{
+    flex-direction: column;
+  }
+  .cuadro1, .cuadro2{
+    max-width: 100%;
+    margin: 10px 0px;
+  }
+  .ContactoCuadros img {
+    height: 50px;
+  };
 }
 
 /* Estilos Footer */
@@ -539,8 +662,7 @@ h1 {
 
 /* Estilos Header */
 
-
-.seccionHeader{
+.seccionHeader {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -549,39 +671,51 @@ h1 {
 }
 
 
-.seccionEnlaces {
-
+.seccionImagen {
   display: flex;
   flex-direction: column;
+  justify-content: end;
+  max-width: 45%;
 }
-.seccionLogin{
 
+.seccionEnlaces {
+  display: flex;
+  flex-direction: column;
+  max-width: 55%;
+}
+
+
+@media (max-width:768px) {
+  .seccionHeader{
+    flex-direction: column;
+  }
+  .seccionImagen, .seccionEnlaces{
+    max-width: 100%;
+    align-items: center;
+  }
+}
+.seccionLogin {
   display: flex;
   justify-content: flex-end;
 }
 
-.seccionLogin a{
-
+.seccionLogin a {
   color: var(--colorPrincipal);
-  font-family: var(--fuentePrincipal);
   margin-left: 7px;
   margin-top: 10px;
-  margin-bottom: 10px;
   text-decoration: none;
   font-weight: 400;
   font-size: 1.7rem;
 }
 
-.seccionLogin a:hover{
+.seccionLogin a:hover {
   text-decoration: underline;
 }
 
-
-.seccionNav a{
+.seccionNav a {
   color: var(--colorSecundario);
   font-family: var(--fuentePrincipal);
   margin-left: 7px;
-  margin-top: 10px;
   margin-bottom: 10px;
   text-decoration: none;
   font-weight: 700;
@@ -589,27 +723,24 @@ h1 {
   display: inline-block;
 }
 
-.seccionNav a:hover{
+.seccionNav a:hover {
   text-decoration: underline;
 }
 
-.botonInformate{
+.botonInformate {
   background-color: var(--colorPrincipal);
   padding: 0.6rem 1.5rem;
   border-radius: 4rem;
   color: white !important;
 }
 
-.botonInformate:hover{
+.botonInformate :hover {
   background-color: var(--colorSecundario);
   text-decoration: none !important;
 }
 
+
 .seccionImagen{
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
+  max-width: 100%;
 }
-
-
 /* Escribir en CSS; BEM; Utility-First;Modulo */
