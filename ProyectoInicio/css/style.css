@@ -35,35 +35,36 @@ body {
 }
 
 /* MediaQuery con vista Ordenador */
-@media (min-width:1140px) {
+@media (min-width: 1140px) {
   /* Estilos Genericos */
   .contenedor {
     max-width: 80%;
-    margin-top: 0;
+    margin: 0 auto;
+    /* margin-top: 0;
     margin-right: auto;
     margin-bottom: 0;
-    margin-left: auto;
+    margin-left: auto; */
     /* margin: o auto; TIENE LA MISMA FUNCION QUE LOS 4 MARGIN DE ARRIBA */
   }
 }
 
 /* para tablet */
-@media (max-width:1140px) and (min-width:768px) {
+@media (max-width: 1140px) and (min-width: 768px) {
   .contenedor {
     max-width: 80%;
     margin: 0 auto;
   }
 }
 /* Para movil */
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .contenedor {
-    max-width: 90%; 
+    max-width: 90%;
     margin: 0 auto;
   }
 }
 
 /* Estilos para el Main */
-.imgfondo-principal {
+.fondoMain {
   background-image: url(../img/11641893944_banner_zona_centro.png);
   background-size: cover;
   background-position: top left;
@@ -90,7 +91,7 @@ h1 {
   line-height: 1.2;
 }
 
-.imgfondo-principal a {
+.fondoMain a {
   background-color: black;
   color: white;
   border: 2px solid black;
@@ -103,7 +104,7 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  .imgfondo-principal {
+  .fondoMain a{
     padding: 24px 70px;
   }
 }
@@ -116,24 +117,25 @@ h1 {
   /* importante el justify-content ya que con eso ordenaras los objetos */
 }
 
-
 .flexMain img {
   margin-right: 10px;
 }
 
 /* Estilos para la imagen de corporaciones */
-.imagenesCorpo {
+.logo {
   background-color: white;
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: -120px;
-  border-radius: 12px;
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-top: -120px;
+  border-radius: 12px;
+
 }
 
-@media (max-width: 1140px) and (min-width: 768px) {
+@media (max-width:1140px) and (min-width:768px) {
   [src="img/Logos-oficiales.png"] {
     max-width: 70%;
   }
@@ -143,25 +145,25 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  .imagenesCorpo {
+  .logo {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .imagenesCorpo img {
+  .logo img {
     max-width: 100%;
     margin: 20px;
   }
 }
 
-@media (max-width:768px) {
-  .imagenesCorpo{
+@media (max-width: 768px) {
+  .logo {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .imagenesCorpo img{
+  .logo img {
     max-width: 90%;
     padding: 20%;
   }
@@ -195,6 +197,12 @@ h1 {
   margin-bottom: 105px;
 }
 
+.botonesCursos  .botonVertodo:hover{
+  background-color: var(--colorSecundario);
+}
+.botonesCursos .botonMadrid:hover{
+  background-color: var(--colorPrincipal);
+}
 .cambiatufuturoh3 {
   color: black;
   text-align: center;
@@ -353,20 +361,18 @@ h1 {
   justify-content: center;
   margin-bottom: 70px;
 }
-@media (max-width:1140px) {
-  .VideoYoutube iframe{
+@media (max-width: 1140px) {
+  .VideoYoutube iframe {
     width: 100%;
     height: 350px;
   }
-  
 }
 
-@media (max-width:767px) {
-  .VideoYoutube iframe{
+@media (max-width: 768px) {
+  .VideoYoutube iframe {
     width: 100%;
     height: 200px;
   }
-  
 }
 /* Estilos seccion para quien son estos cursos */
 
@@ -375,11 +381,10 @@ h1 {
   flex-direction: row;
   margin-bottom: 100px;
 }
-@media (max-width:1140px) {
-  .SeccionParaQuien{
+@media (max-width: 1140px) {
+  .SeccionParaQuien {
     flex-direction: column;
   }
-  
 }
 
 .SeccionParaQuien > div {
@@ -387,14 +392,12 @@ h1 {
   max-width: 50%;
 }
 
-@media (max-width:1140px) {
-  .SeccionParaQuien>div{
-    flex:1;
+@media (max-width: 1140px) {
+  .SeccionParaQuien > div {
+    flex: 1;
     max-width: 100%;
   }
-  
 }
-
 
 .texto-h3-red {
   color: var(--colorPrincipal);
@@ -471,7 +474,7 @@ h1 {
 
 .ParaQuienDerechaSuperior {
   background-color: var(--colorPrincipal);
-  padding: 60px 30px;
+  padding: 90px 30px;
 }
 
 .ParaQuienDerechaSuperior h5 {
@@ -514,44 +517,63 @@ h1 {
   margin-top: 20px;
 }
 
-/* Estilos Localizaciones */
-.localizaciones {
-  color: white;
+
+/* ESTILOS LOCALIZACIONES  */
+
+/* .localizaciones {
+    background-color: black;
+    color: white;
+} */
+
+.cajas-localizaciones {
   background-color: black;
-  text-transform: uppercase;
-  padding: 120px 0px;
-  font-size: 1.4rem;
+  padding: 100px 0;
 }
 
-.Cajas {
+.cajas-localizaciones .contenedor {
   display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 
-.MadridCaja {
-  padding-top: 10px;
-  width: 25%;
+.cajas-localizaciones .contenedor div {
+  /* width: 25%; */
+  padding: 24px 0px;
+  color: white;
+  margin: 0;
 }
 
-.MadridCaja2 {
-  width: 25%;
-}
+/* .cajas-localizaciones .contenedor{
+  display: grid;
+  /* grid:1fr/1fr 1fr 1fr 1fr; */
+  /* grid:1fr/repeat(4,1fr); */
+
+
 @media (max-width:1140px) {
-  .localizaciones{
-    width: 50%;
+  .cajas-localizaciones .contenedor div {
+      width: 50%;
   }
-  
 }
 
 @media (max-width:768px) {
-  .localizaciones .contenedor{
-    flex-wrap: wrap;
+  .cajas-localizaciones .contenedor{
+      flex-wrap: wrap;
   }
-  .localizaciones .contenedor div{
-    width: 100%;
+  .cajas-localizaciones .contenedor div {
+      width: 100%;
   }
 }
+
+.cajas-localizaciones h2 {
+  color: white;
+  font-size: 27px;
+  font-weight: 700px;
+  font-family: var(--fuenteBotones);
+  margin-bottom: 40px;
+  text-transform: uppercase;
+
+
+}
+
+
 
 
 /* Estilos Contactar */
@@ -580,7 +602,6 @@ h1 {
   flex-direction: row;
 }
 
-
 .ContactoCuadros img {
   margin-right: 15px;
 }
@@ -607,17 +628,18 @@ h1 {
   padding: 20px;
 }
 
-@media (max-width:1140px) {
-  .ContactoCuadros{
+@media (max-width: 1140px) {
+  .ContactoCuadros {
     flex-direction: column;
   }
-  .cuadro1, .cuadro2{
+  .cuadro1,
+  .cuadro2 {
     max-width: 100%;
     margin: 10px 0px;
   }
   .ContactoCuadros img {
     height: 50px;
-  };
+  }
 }
 
 /* Estilos Footer */
@@ -649,6 +671,7 @@ h1 {
 .cajaFooter2 {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   font-size: 14px;
   border-top: 1px solid #194584;
   border-bottom: 1px solid #194584;
@@ -670,7 +693,6 @@ h1 {
   margin-bottom: 20px;
 }
 
-
 .seccionImagen {
   display: flex;
   flex-direction: column;
@@ -684,12 +706,12 @@ h1 {
   max-width: 55%;
 }
 
-
-@media (max-width:768px) {
-  .seccionHeader{
+@media (max-width: 768px) {
+  .seccionHeader {
     flex-direction: column;
   }
-  .seccionImagen, .seccionEnlaces{
+  .seccionImagen,
+  .seccionEnlaces {
     max-width: 100%;
     align-items: center;
   }
@@ -697,6 +719,7 @@ h1 {
 .seccionLogin {
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 5px;
 }
 
 .seccionLogin a {
@@ -716,11 +739,12 @@ h1 {
   color: var(--colorSecundario);
   font-family: var(--fuentePrincipal);
   margin-left: 7px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   text-decoration: none;
   font-weight: 700;
   font-size: 1.7rem;
   display: inline-block;
+  margin-top: 9px;
 }
 
 .seccionNav a:hover {
@@ -729,7 +753,7 @@ h1 {
 
 .botonInformate {
   background-color: var(--colorPrincipal);
-  padding: 0.6rem 1.5rem;
+  padding: 0.7rem 1.5rem;
   border-radius: 4rem;
   color: white !important;
 }
@@ -739,8 +763,74 @@ h1 {
   text-decoration: none !important;
 }
 
-
-.seccionImagen{
+.seccionImagen {
   max-width: 100%;
 }
 /* Escribir en CSS; BEM; Utility-First;Modulo */
+
+ 
+
+/* 
+----CSS GRID-----: (FLEX VS GRID) Su objetivo es organizar, dar ubicacion
+y tamaño a los elementos.
+El Flex Solo trabaja en una direccion. colum o row(el elemento padre)
+Grid Trabaja en las dos direcciones a la vez.
+Cada uno es mas facil usarlo en ciertas ocasiones, se pueden utilizar en un mismo diseño
+
+.ejercicioGrid {
+  display: grid;
+  grid-template-columns: 20% 30% 50%;
+  grid-template-rows: 200px 100px;
+  margin: 20px;
+}
+
+.ejercicioGrid div {
+  border: 1px solid black;
+}
+
+
+.ejercicioGrid1 {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-rows:50px 300px 100px 200px;
+  margin: 300px;
+
+}
+
+.ejercicioGrid1 div{
+  border: 2px solid red;
+}
+
+
+
+
+.ejercicioGrid2{
+  display: grid;
+  grid-template-columns: 100fr 300fr 200fr 150fr; 
+   =grid-template-columns: 1fr 3fr 2fr 1.5fr; 
+  grid-template-rows: 5fr 15fr 16fr 7fr;
+  height: 500px;
+  margin: 50px;
+}
+
+.ejercicioGrid2 div{
+border: 3px solid green;
+}
+
+.ejercicioGrid3{
+  display: grid;
+   grid-template-columns: 2fr 2fr;
+  grid-template-rows: 1fr 1fr; 
+  grid: 2fr  2fr/ 1fr  1fr;
+  height: 300px;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.ejercicioGrid3 div{
+  border: 3px solid black;
+}
+ */
+
+
+
