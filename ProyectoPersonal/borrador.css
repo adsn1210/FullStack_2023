@@ -1,17 +1,46 @@
-
-
-:root{
-    --colorPrincipal: ;
-    --colorSecundario: ;
-    --fuentePrincipal: ;
-    --fuenteBotones: ;
-
+:root {
+  --colorPrincipal: ;
+  --colorSecundario: ;
+  --backgroundColor:#F0E0C7;
+  --fuentePrincipal: "Open Sans", sans-serif;
+  --fuenteBotones: ;
 }
 
-html{
-   
+html {
+  font-size: 80%;
 }
 
-body{
-    
+body {
+  font-size: 20px;
+  background-color: var(--backgroundColor);
+}
+
+@media (min-width: 1140px) {
+  .contenedor {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+}
+
+/* para tablet */
+@media (max-width: 1140px) and (min-width: 768px) {
+  .contenedor {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+/* Para movil */
+@media (max-width: 768px) {
+  .contenedor {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+
+/* Seccion Header */
+.tituloHeader a{
+  text-decoration: none;
+  font-size: 50px;
+  color: #36853E;
 }
