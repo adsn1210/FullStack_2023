@@ -71,7 +71,6 @@ body {
 /* Seccion del Nav */
 .menu {
   width: 100%;
-  padding: 2px;
   background-color: var(--backgroundColorSecun);
   display: flex;
   flex-direction: row;
@@ -87,3 +86,17 @@ body {
   color:#36853e;
   
 }
+
+h1{
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+/* Imagines con slides */
+
