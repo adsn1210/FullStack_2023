@@ -61,8 +61,6 @@ body {
   margin-left: 30px;
 }
 
-
-
 /* Seccion del Nav */
 .menu {
   width: 100%;
@@ -71,6 +69,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  height: 50px;
   background: linear-gradient(
     to right,
     rgba(247, 229, 198, 0.7),
@@ -121,3 +120,14 @@ img {
   object-fit: cover;
 }
 
+
+#nav {
+  position: relative; /* O la posición inicial que prefieras */
+  transition: position 0.3s ease; /* Agrega una transición suave */
+}
+
+.fixed-nav {
+  position: fixed !important;
+  top: 58px;
+  width: 100%;
+}
