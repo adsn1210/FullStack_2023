@@ -1,4 +1,6 @@
 // ARRAYS
+// SIRVEN PARA AGRUPAR ELEMENTOS, CONTENEDORES DE VARIABLES
+// LISTA DE AMIGOS DE FACEBOOK POR EJEMPLO
 
 const numeros = [10, 20, 40, 50];
 console.log("Mi primer array", numeros);
@@ -75,3 +77,5 @@ console.table(carrito);
 let resultado;
 resultado = meses.includes("mayo")
 console.log(resultado)
+
+
