@@ -260,3 +260,10 @@ function caracteresDeclaracion (x,y){
 }
 console.log(caracteresDeclaracion("hola", "adios"));
 
+///ejercicio
+
+let quitarUlt = (arr) => arr.pop();
+let myArray= [1,2,3,4];
+console.log(quitarUlt(myArray))
+
+
