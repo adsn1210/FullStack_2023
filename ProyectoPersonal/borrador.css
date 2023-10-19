@@ -103,12 +103,11 @@ h1 {
   margin-bottom: 50px;
 }
 
+
 .parrafoLnks>a{
 text-decoration: none;
 color: white;
 }
-
-
 
 
 /* Imagines con slides */
@@ -154,4 +153,14 @@ img {
   position: fixed !important;
   top: 58px;
   width: 100%;
+}
+
+
+/* OCULTAR Lineas de texto en P */
+p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+
 }
