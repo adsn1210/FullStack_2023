@@ -109,21 +109,21 @@ NECESITA UN BREAK PARA FINALIZAR CADA CASE
 DEFAULT ME MUESTRA EL CASO POR DEFECTO
 */
 
-const metodoPago = prompt("Introduce el metodo de pago");
-switch (metodoPago) {
-    case "Tarjeta":
-      console.log("Pagaste con  tarjeta");
-      break;
-    case "En mano":
-      console.log("pagaste en mano");
-      break;
-    case "Bizum":
-      console.log("Pagaste en Mano");
-      break;
-    default:
-      console.log("Pendiente de pago"); //Si no se cumple nada de lo anterior
-      break;
-  }
+// const metodoPago = prompt("Introduce el metodo de pago");
+// switch (metodoPago) {
+//     case "Tarjeta":
+//       console.log("Pagaste con  tarjeta");
+//       break;
+//     case "En mano":
+//       console.log("pagaste en mano");
+//       break;
+//     case "Bizum":
+//       console.log("Pagaste en Mano");
+//       break;
+//     default:
+//       console.log("Pendiente de pago"); //Si no se cumple nada de lo anterior
+//       break;
+//   }
 
 ////Ejercicio compara numero
 
@@ -161,16 +161,173 @@ function calculadora(n1, n2) {
 calculadora(16, 16);
 
 
-const numeroSuma = parseInt(prompt ( "Escribe aqui tu numero"));
-    switch(numeroSuma + 10){
-        case 9: console.log("Es igual a 9")
-                break;
-        case 12: console.log("Es igual a 12")
-            break;
-        case 15: console.log("Es igual a 15")
-            break;
-        case 100: console.log("Es igual a 100")
-            break;
-        default: console.log("RESTO DE POSIBILIDADES");
-            break;
-    }
+// const numeroSuma = parseInt(prompt ( "Escribe aqui tu numero"));
+//     switch(numeroSuma + 10){
+//         case 9: console.log("Es igual a 9")
+//                 break;
+//         case 12: console.log("Es igual a 12")
+//             break;
+//         case 15: console.log("Es igual a 15")
+//             break;
+//         case 100: console.log("Es igual a 100")
+//             break;
+//         default: console.log("RESTO DE POSIBILIDADES");
+//             break;
+//     }
+
+
+
+//////////////////////////////////////////
+
+/*  ITERADORES / BUCLES
+    For
+    WHILE
+    DO WHILE
+    */
+
+/*for (){} estructura del for */
+
+for (let i = 0; i <= 3; i++) /* 1º va el indice y luego la condicion  y por ultimo el actualizador */ {
+  console.log(i + 1)
+};
+
+//Ejercicio Mostrar del 100 al 200 por pantalla
+
+
+
+for (let x = 100; x <= 110; x++) {
+  console.log(x)
+}
+
+
+//Del 2 al 49 solo numeros pares
+for (let y = 2; y <= 19; y += 2) {
+  console.log(y)
+}
+
+for (let y = 100; y > 0; y -= 5) {
+  console.log(y)
+}
+
+for (let y = 1; y < 20; y++) {
+  if (y % 2 === 0)
+    console.log(y)
+}
+
+/////////////////////////////////////////////////
+// let  arrayNumeros = [1,2,3,4,5,6,7,8,9,9,9,99,99,9,9,9,9,9];
+//   for (let i=0 ; i < arrayNumeros.length ; i++){
+
+//     console.log(arrayNumeros[i])
+
+//   }
+///////////////////////////////
+
+
+let carrito = [
+  {
+    nombre: "tv",
+    precio: 3004,
+  },
+  {
+    nombre: "reloj",
+    precio: 1400,
+  },
+
+  {
+    nombre: "pantalon",
+    precio: 342,
+  },
+  {
+    nombre: "camisa",
+    precio: 233,
+  },
+];
+
+for (let i = 0; i < carrito.length; i++) {
+  console.log(carrito[i])
+  console.log(carrito[i].nombre)
+}
+
+
+
+////WHILE LOOP
+
+let i = 0;
+while (i < 100) {
+  console.log(i);
+  i++;
+
+}
+
+//Do While
+let j = 100; //indice
+do {
+  console.log(j)
+} while (j < 50);
+
+
+
+//////EJERCICIOS
+let k = 1;
+while (k < 20) {
+  if (k % 2 === 0) {
+    console.log(k);
+  }
+  k++
+}
+
+function Numero(x) {
+  if (x > 0) {
+    console.log("Es positivo ");
+
+  }
+  else if (x < 0) {
+    console.log("Es negativo ");
+  } else {
+
+
+    console.log("Es igual  a 0 ");
+
+  }
+}
+Numero(2);
+
+
+
+function cuentaAtras(x) {
+
+  for (let i = x; i > 0; i--) {
+    console.log(i);
+
+  }
+
+}
+cuentaAtras(11)
+
+
+//Creaamos una Fnction Q se llama acumulacion con un argumento que nos devuelve la suma de todos los numros entre 0 y ese argumemnto
+
+// function acumulacion(n){
+//   for(let i = n; i > 0; ){
+//     console.log(i);
+//   }
+
+// }
+// acumulacion(33)
+
+
+let totalAcum = 0;
+function acumulacion (x){
+  for(let i = x; i>=0; i--){
+    totalAcum =  totalAcum+i;
+
+  }
+      console.log(totalAcum);
+      console.log(totalAcum/x+1)
+
+}
+acumulacion(6)
+
+//Funcion que dado un argumento, me calcule la media de la suma de todos los valores
+//usar while

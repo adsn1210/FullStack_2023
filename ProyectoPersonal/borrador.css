@@ -112,10 +112,10 @@ color: white;
 
 /* Imagines con slides */
 
-body,
-html {
+bod
   margin: 0;
-  padding: 0;
+  padding: 0;y,
+html {
   height: 100%;
   /* overflow: hidden; */
 }
@@ -157,10 +157,10 @@ img {
 
 
 /* OCULTAR Lineas de texto en P */
-p {
+/* p {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
 
-}
+} */
