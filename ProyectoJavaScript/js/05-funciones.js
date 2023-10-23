@@ -1,6 +1,6 @@
 // FUNCIONES
 // Son reutilizables
-// primero se crea la funcin y luego se crea
+// primero se crea la funcion
 
 // expresion de la funcion
 
@@ -37,7 +37,7 @@ function color(x) {
 }
 
 color("verde");
-color("pene");
+color("rojo");
 
 // function total(){
 //     console.log(`` $())
