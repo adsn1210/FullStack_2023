@@ -55,6 +55,8 @@ console.log("Resultado:", resultado);
 resultado1 = Math.round(Math.random() * 30);
 console.log("resultado1=", resultado1);
 
+
+///////////////
 let diametro = 3;
 let area;
 area = Math.PI * Math.pow(diametro / 2, 2);

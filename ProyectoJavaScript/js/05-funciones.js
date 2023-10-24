@@ -56,7 +56,7 @@ function twt(texto) {
 }
 
 twt("Este es mi texto 123456");
-
+///////////////////////////////////
 let frutas = ["pera", "platano"];
 function añadirFruta(k) {
   frutas.push(k);
