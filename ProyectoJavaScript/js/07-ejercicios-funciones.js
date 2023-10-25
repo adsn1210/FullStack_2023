@@ -180,6 +180,7 @@ P: ARRAY*/
 
 
 const nums = [2, 3, 4, 5, "a", 6];
+//operador logico en la comparacio  de true false en `number` || isNaN (NotaNumber)[i];
 
 function arrayNumeros(array) {
     for (let i = 0; i < array.length; i++) {
