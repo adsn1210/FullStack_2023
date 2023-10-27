@@ -1,10 +1,12 @@
 :root {
   --colorPrincipal: ;
-  --colorSecundario: ;
+  --colorSecundario:rgb(139, 0, 0) ;
+  --colorLinks: #ffffff;
   --backgroundColor: #f0e0c7;
   --backgroundColorSecun: #917c57;
   --fuentePrincipal: "Open Sans", sans-serif;
   --fuenteBotones: ;
+  --cursor:url(C:\Users\Adrian\Desktop\FullStack_2023\ProyectoPersonal\img\trazo-de-pincel.png)
 }
 
 html {
@@ -70,10 +72,13 @@ body {
   color: black;
   display: grid;
   margin-right: 5%;
-
-
   font-size: 25px;
 }
+
+.contactanosHeader:hover {
+  color: var(--colorLinks);
+}
+
 
 
 /* Seccion del Nav */
@@ -105,23 +110,33 @@ h2 {
 
 .parrafoLnks>a {
   text-decoration: none;
-  color: white;
+  color: var(--colorLinks);
 }
 
+.parrafoLnks a:hover {
+  color: rgb(139, 0, 0);
+  ;
+}
 
 /* Imagines con slides */
 
 html {
-  height: 100%; /*altura del HTML*/
+  height: 100%;
+  /*altura del HTML*/
 }
 
-.slider { /*Estilos contenedor slider */
-  display: flex;/*podemos moverlo en flex (filas o columnas)*/
-  transition: transform 0.5s ease-in-out;/*aplicamos transicion suave*/
+.slider {
+  /*Estilos contenedor slider */
+  display: flex;
+  /*podemos moverlo en flex (filas o columnas)*/
+  transition: transform 0.5s ease-in-out;
+  /*aplicamos transicion suave*/
   width: 100%;
-  height: 93.5vh;/*La altura de la ventana lo que ves al momento de entrar en la pagina ya que es la parte principal*/
+  height: 93.5vh;
+  /*La altura de la ventana lo que ves al momento de entrar en la pagina ya que es la parte principal*/
   align-items: start;
-  overflow: hidden; /*Para que la imagen no salga del contendor ya que cada una tienen tamaños distintos y podrian salirse del contenedor creado*/
+  overflow: hidden;
+  /*Para que la imagen no salga del contendor ya que cada una tienen tamaños distintos y podrian salirse del contenedor creado*/
   /* ponemos el overflow:hidden aqui para que no afecte a todo el body*/
 }
 
@@ -153,17 +168,18 @@ img {
   width: 100%;
 }
 
+.menu a:hover {
+  color: var(--colorLinks);
+
+}
 
 
-
-
-
-
-/*IMAGEN  article*/
+/****IMAGEN  article******/
 article {
   position: relative;
-  width: 250px;
+  width: 300px;
   transition: all .3s ease;
+  /* margin-right: 400px; */
 }
 
 article img:first-child {
@@ -175,7 +191,7 @@ article img:first-child {
 
 article img:last-child {
   position: absolute;
-  width: 200px;
+  width: 250px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -214,15 +230,117 @@ article:hover img:last-child {
   transform: translateY(10%);
 }
 
+.articleFlex {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 120px;
+}
 
-/*Logo fijo*/
-.logoFix{
+
+
+/****Logo fijo****/
+.logoFix {
   position: fixed;
   bottom: 0;
   right: 0;
 }
 
-.logoFix img{
+.logoFix img {
   width: 80px;
-  background-image: ;
 }
+
+
+/*Historia del Ukiyo-e*/
+
+
+
+.ukiyoe {
+  color: rgb(139, 0, 0);
+}
+
+#historia a {
+  text-decoration: none;
+  color: rgb(139, 0, 0);
+
+}
+
+#historia a:hover {
+  text-decoration: none;
+  color: var(--colorLinks);
+}
+
+
+.imgGrid {
+  height: 500px;
+  /* max-width: 200px; */
+  margin: 30px;
+  gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.img1_grid {
+  background-image: url(./img/xilo.jpg);
+  background-size: cover;
+
+}
+
+.img2_grid {
+  background-image: url(./img/xilo1.jpg);
+  background-size: cover;
+
+}
+
+.img3_grid {
+  background-image: url(./img/xilo3.jpg);
+  background-size: cover;
+
+}
+
+.img1_grid:hover{
+ background-image:url(./img/xilografiaTexto0.png); 
+}
+.img2_grid:hover{
+  background-image:url(./img/xilografiaTexto1.png) ;
+  filter: contrast(120%);
+
+}
+.img3_grid:hover{
+  background-image: url(./img/Xilo3Texto.png) ;
+}
+
+
+
+/***ARTE***/
+
+.arte{
+  margin-top: 150px;
+}
+
+h4{
+  color:var(--colorSecundario);
+}
+
+.irezumiArte{
+  display: flex;
+  /* width: 600px; */
+  height: 555px;
+  
+}
+
+.irezumiArte img{
+  width: 0;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .9;
+  transition: 0.3s ease;
+}
+
+.irezumiArte img:hover{
+  cursor: crosshair; /*cambiamos el cursos */
+  width: 250px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+/*HANKO*/
