@@ -1,12 +1,12 @@
 :root {
   --colorPrincipal: ;
-  --colorSecundario:rgb(139, 0, 0) ;
+  --colorSecundario: rgb(139, 0, 0);
   --colorLinks: #ffffff;
   --backgroundColor: #f0e0c7;
   --backgroundColorSecun: #917c57;
   --fuentePrincipal: "Open Sans", sans-serif;
   --fuenteBotones: ;
-  --cursor:url(C:\Users\Adrian\Desktop\FullStack_2023\ProyectoPersonal\img\trazo-de-pincel.png)
+  --cursor: url(C:\Users\Adrian\Desktop\FullStack_2023\ProyectoPersonal\img\trazo-de-pincel.png)
 }
 
 html {
@@ -122,7 +122,6 @@ h2 {
 
 html {
   height: 100%;
-  /*altura del HTML*/
 }
 
 .slider {
@@ -297,38 +296,40 @@ article:hover img:last-child {
 
 }
 
-.img1_grid:hover{
- background-image:url(./img/xilografiaTexto0.png); 
+.img1_grid:hover {
+  background-image: url(./img/xilografiaTexto0.png);
 }
-.img2_grid:hover{
-  background-image:url(./img/xilografiaTexto1.png) ;
+
+.img2_grid:hover {
+  background-image: url(./img/xilografiaTexto1.png);
   filter: contrast(120%);
 
 }
-.img3_grid:hover{
-  background-image: url(./img/Xilo3Texto.png) ;
+
+.img3_grid:hover {
+  background-image: url(./img/Xilo3Texto.png);
 }
 
 
 
 /***ARTE***/
 
-.arte{
+.arte {
   margin-top: 150px;
 }
 
-h4{
-  color:var(--colorSecundario);
+h4 {
+  /* color: var(--colorSecundario); */
 }
 
-.irezumiArte{
+.irezumiArte {
   display: flex;
   /* width: 600px; */
   height: 555px;
-  
+
 }
 
-.irezumiArte img{
+.irezumiArte img {
   width: 0;
   flex-grow: 1;
   object-fit: cover;
@@ -336,11 +337,48 @@ h4{
   transition: 0.3s ease;
 }
 
-.irezumiArte img:hover{
-  cursor: crosshair; /*cambiamos el cursos */
+.irezumiArte img:hover {
+  cursor: crosshair;
+  /*cambiamos el cursos */
   width: 250px;
   opacity: 1;
   filter: contrast(120%);
 }
 
 /*HANKO*/
+
+/******* TATUAJES*******/
+
+.tatuajes{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin-top: 40px;
+  font-size: 25px;
+}
+.tatuajes p{
+  color:var(--colorSecundario);
+
+}
+.tatuajesImg1 {
+  margin-top: 60px;
+  background-image: url(./img/tatu2.jpg);
+  width: 300px;
+  height: 400px;
+  background-size: cover;
+}
+
+
+/***Imagen separadora***/
+.imgSeparacion{
+  margin: 30px 0px;
+  background-image: url(img/2190.jpg);
+  /* background-size: cover; */
+  width: 100%;
+  background-size: cover;
+  height: 500px;
+}
+
+/******SPOTIFY********/
+.spotify{
+  margin-top: 120px;
+}
