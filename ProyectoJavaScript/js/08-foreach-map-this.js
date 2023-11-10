@@ -82,9 +82,13 @@ let fecha = {
   año: 2023,
   mes: "octubre",
   dia: 24,
-  faltantes : function () {
-    console.log(`faltan ${31-this.dias}`)
+  faltantes: function () {
+    console.log(`faltan ${31 - this.dias}`)
 
   }
-}  
+}
 console.log(fecha)
+
+
+
+

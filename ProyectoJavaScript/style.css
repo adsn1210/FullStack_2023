@@ -27,3 +27,14 @@
 h1{
     color: red;
 }
+
+
+.estilosEnlaces a{
+    margin-right: 3rem;
+
+
+}
+
+.fichas{
+    background-color: aqua;
+}

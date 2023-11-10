@@ -1,0 +1,508 @@
+:root {
+  --colorPrincipal: ;
+  --colorSecundario: rgb(139, 0, 0);
+  --colorLinks: #ffffff;
+  --backgroundColor: #f0e0c7;
+  --backgroundColorSecun: #917c57;
+  --fuentePrincipal: "Open Sans", sans-serif;
+  --fuenteBotones: ;
+}
+
+html {
+  font-size: 80%;
+}
+
+body {
+  font-size: 20px;
+  background-color: var(--backgroundColor);
+  margin: 0;
+}
+
+@media (min-width: 1140px) {
+  .contenedor {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* para tablet */
+@media (max-width: 1140px) and (min-width: 768px) {
+  .contenedor {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/* Para movil */
+@media (max-width: 768px) {
+  .contenedor {
+    max-width: 92%;
+    margin: 0 auto;
+  }
+}
+
+/* Seccion Header */
+.headerBox {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right,
+      rgba(247, 229, 198, 0.7),
+      rgba(54, 133, 62, 0.3));
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.tituloHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tituloHeader a {
+  text-decoration: none;
+  font-size: 50px;
+  color: #36853e;
+  margin-left: 30px;
+}
+
+.tituloHeader .contactanosHeader {
+  color: black;
+  display: grid;
+  margin-right: 5%;
+  font-size: 25px;
+}
+
+.contactanosHeader:hover {
+  color: var(--colorLinks);
+}
+
+
+
+/* Seccion del Nav */
+.menu {
+  width: 100%;
+  background-color: var(--backgroundColorSecun);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background: linear-gradient(to right,
+      rgba(247, 229, 198, 0.7),
+      rgba(54, 133, 62, 0.3));
+}
+
+.menu a {
+  margin: 0px 30px;
+  text-decoration: none;
+  color: #36853e;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+.parrafoLnks>a {
+  text-decoration: none;
+  color: var(--colorLinks);
+}
+
+.parrafoLnks a:hover {
+  color: rgb(139, 0, 0);
+  ;
+}
+
+
+
+/*IMAGE-CONTAINER*/
+
+
+@media (max-width: 768px) {
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between
+  }
+}
+
+
+.image-container{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100%;
+margin: 0;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: 650px;
+  height: 550px;
+  object-fit: cover;
+  margin: 0 10px;
+  opacity: 0.7;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.image-container img:hover {
+  transform: translateY(-10px);
+  opacity: 1;
+}
+
+  /* **********Imagines con slides******* */
+
+  html {
+    height: 100%;
+  }
+
+  .slider {
+    /*Estilos contenedor slider */
+    display: flex;
+    /*podemos moverlo en flex (filas o columnas)*/
+    transition: transform 0.5s ease-in-out;
+    /*aplicamos transicion suave*/
+    width: 100%;
+    height: 93.5vh;
+    /*La altura de la ventana lo que ves al momento de entrar en la pagina ya que es la parte principal*/
+    align-items: start;
+    overflow: hidden;
+    /*Para que la imagen no salga del contendor ya que cada una tienen tamaños distintos y podrian salirse del contenedor creado*/
+    /* ponemos el overflow:hidden aqui para que no afecte a todo el body*/
+  }
+
+  .slide {
+    flex: 1;
+    min-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 768px) {
+    .slider {
+    height: 50%;
+    }
+  }
+
+  /*////////////////*/
+  #nav {
+    position: relative;
+    /* O la posición inicial que prefieras */
+    transition: position 0.3s ease;
+    /* Agrega una transición suave */
+  }
+
+  .fixed-nav {
+    position: fixed !important;
+    top: 58px;
+    width: 100%;
+  }
+
+  .menu a:hover {
+    color: var(--colorLinks);
+
+  }
+
+
+  /****IMAGEN  article******/
+  article {
+    position: relative;
+    width: 300px;
+    transition: all .3s ease;
+    /* margin-right: 400px; */
+  }
+
+  article img:first-child {
+    box-shadow: 0 60px 60px -60px rgba(0, 30, 255, 0.5);
+    border-radius: 4px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  article img:last-child {
+    position: absolute;
+    width: 250px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(25%);
+    transition: .3s ease;
+    opacity: 0;
+
+  }
+
+  article :hover {
+    /*Aplica una transformación 3D al artículo (rotación, traslación en los ejes X e Y). cuando se pasa el raton por encima*/
+    transform: perspective(250px) rotatex(10deg) translateY(-5%) translateZ(0)
+  }
+
+  article::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom,
+        transparent 100% rgba(0, 0, 0, 0.5)50% rgba(0, 0, 0)95%);
+    opacity: 0;
+    transition: all .3s ease;
+
+  }
+
+  article:hover::before {
+    opacity: 1;
+
+  }
+
+  article:hover img:last-child {
+    opacity: 1;
+    transform: translateY(10%);
+  }
+
+  .articleFlex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 120px;
+  }
+
+
+
+  /****Logo fijo****/
+  .logoFix {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+
+  .logoFix img {
+    width: 80px;
+  }
+
+
+  /*Historia del Ukiyo-e*/
+
+
+
+  .ukiyoe {
+    color: rgb(139, 0, 0);
+  }
+
+  #historia a {
+    text-decoration: none;
+    color: rgb(139, 0, 0);
+
+  }
+
+  #historia a:hover {
+    text-decoration: none;
+    color: var(--colorLinks);
+  }
+
+
+  .imgGrid {
+    height: 500px;
+    /* max-width: 200px; */
+    margin: 30px;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .img1_grid {
+    background-image: url(./img/xilo.jpg);
+    background-size: cover;
+
+  }
+
+  .img2_grid {
+    background-image: url(./img/xilo1.jpg);
+    background-size: cover;
+
+  }
+
+  .img3_grid {
+    background-image: url(./img/xilo3.jpg);
+    background-size: cover;
+
+  }
+
+  .img1_grid:hover {
+    background-image: url(./img/xilografiaTexto0.png);
+  }
+
+  .img2_grid:hover {
+    background-image: url(./img/xilografiaTexto1.png);
+    filter: contrast(120%);
+
+  }
+
+  .img3_grid:hover {
+    background-image: url(./img/Xilo3Texto.png);
+  }
+
+
+  @media (max-width: 768px) {
+  .articleFlex {
+display: grid;
+grid-template-columns: 1fr;
+  }
+}
+
+
+  /***ARTE***/
+
+  .arte {
+    margin-top: 150px;
+  }
+
+
+  /* color: var(--colorSecundario); */
+
+
+  .irezumiArte {
+    display: flex;
+    /* width: 600px; */
+    height: 555px;
+
+  }
+
+  .irezumiArte img {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .9;
+    transition: 0.3s ease;
+  }
+
+  .irezumiArte img:hover {
+    cursor: crosshair;
+    /*cambiamos el cursos */
+    width: 250px;
+    opacity: 1;
+    filter: contrast(120%);
+  }
+
+
+
+  /******* TATUAJES*******/
+
+  .tatuajesDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .tatuajes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    font-size: 25px;
+  }
+
+  .textoTatuajes{
+    max-width: 70%;
+    flex: 70%;
+  }
+
+  .tatuajes p {
+    color: var(--colorSecundario);
+
+  }
+
+  .tatuajesImg1 {
+    /* margin-top: 60px; */
+    background-image: url(./img/tatu2.jpg);
+    max-width: 30%;
+    flex: 30%;
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+
+  /* para movil */
+ 
+
+
+  /***Imagen separadora***/
+  .imgSeparacion {
+    margin: 90px 0px;
+    background-image: url(img/2190.jpg);
+    /* background-size: cover; */
+    width: 100%;
+    background-size: cover;
+    height: 500px;
+  }
+
+
+  /******SPOTIFY********/
+  .spotify {
+    margin-top: 120px;
+  }
+
+  .spotify>h2 {
+    font-size: 40px;
+    color: var(--colorSecundario);
+
+  }
+
+
+
+  
+/* Estilos Footer */
+.Footer {
+  display: flex;
+  flex-direction: column;
+  color: var(--colorSecundario);
+  text-transform: uppercase;
+  padding: 40px 0px 10px 0px;
+  margin-top: 50px;
+}
+
+.cajaFooter1 {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.7rem;
+  font-weight: 800;
+  line-height: 1.2;
+  padding: 30px 0px 45px 0px;
+}
+
+
+
+.txtsobre {
+  width: 20%;
+}
+
+.cajaFooter2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 14px;
+  border-top: 1px solid #194584;
+  border-bottom: 1px solid #194584;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.cajaFooter2 a {
+  margin-right: 25px;
+}
+
