@@ -200,7 +200,7 @@ for (let x = 100; x <= 110; x++) {
 }
 
 
-//Del 2 al 49 solo numeros pares
+//Del 2 al 19 solo numeros pares
 for (let y = 2; y <= 19; y += 2) {
   console.log(y)
 }

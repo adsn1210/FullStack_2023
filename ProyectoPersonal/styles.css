@@ -11,6 +11,8 @@
 
 html {
   font-size: 80%;
+  scroll-behavior: smooth;
+
 }
 
 body {
@@ -82,7 +84,7 @@ body {
 
 
 
-/****** Seccion del Nav*******/
+/****** Section del Nav*******/
 .menu {
   width: 100%;
   background-color: var(--backgroundColorSecun);
@@ -123,7 +125,6 @@ h2 {
 
 /****IMAGE-CONTAINER****/
 
-/* Estilos para pantallas más grandes (ancho mayor a 768px) */
 .image-container {
   display: flex;
   align-items: center;
