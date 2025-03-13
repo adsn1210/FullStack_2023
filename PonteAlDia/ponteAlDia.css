@@ -378,8 +378,8 @@ a
 
 .gridProblemaResuelto {
   display: grid;
-  grid-template-rows: ;
-  grid-template-columns: ;
+  grid: template rows 2px; ;
+  grid: template columns 2px; ;
   height: 900px;
 }
 
